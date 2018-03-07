@@ -55,6 +55,12 @@ public class MainDay02 {
 
 	private static void enterNumber() {
 		Scanner scan = new Scanner(System.in);
-		num = Integer.parseInt(scan.nextLine());
+		do {
+			while (!scan.hasNextInt()) {
+				String input = scan.nextLine();
+				System.out.printf(input + "is not Valid\nPlease enter again!");
+			}
+			num = Integer.parseInt(scan.nextLine());
+		} while (num < 0);
 	}
 }

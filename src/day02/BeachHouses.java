@@ -1,6 +1,3 @@
-/**
- * 
- */
 package day02;
 
 /**
@@ -30,5 +27,4 @@ public class BeachHouses {
 	public void setNameBeach(String nameBeach) {
 		this.nameBeach = nameBeach;
 	}
-
 }

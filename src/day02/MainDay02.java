@@ -1,6 +1,3 @@
-/**
- * 
- */
 package day02;
 
 import java.util.Scanner;
@@ -12,17 +9,17 @@ import java.util.Scanner;
 public class MainDay02 {
 	static int num;
 	static int i;
+	private static String _villa = "Villa";
+	private static String _beachHouse = "Beach House";
 
 	public static void main(String[] args) {
 		RunTask01Day01();
 	}
 
 	private static void RunTask01Day01() {
-		System.out.println("Enter how many Villa!");
-		enterNumber();
+		enterNumber(_villa);
 		enterNameVillaAndShow();
-		System.out.println("\nEnter how many Beach House!");
-		enterNumber();
+		enterNumber(_beachHouse);
 		enterNameBeachHouseAndShow();
 	}
 
@@ -53,7 +50,8 @@ public class MainDay02 {
 
 	}
 
-	private static void enterNumber() {
+	private static void enterNumber(String name) {
+		System.out.println("Enter How many " + name);
 		Scanner scan = new Scanner(System.in);
 		do {
 			while (!scan.hasNextInt()) {

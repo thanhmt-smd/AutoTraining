@@ -2,9 +2,10 @@ package day01;
 
 public class Swimming {
 	private String openTime;
+	private String _time = "09:00 AM";
 
 	public Swimming() {
-		this.setOpenTime("09:00 AM");
+		this.setOpenTime(_time);
 	}
 
 	public String getOpenTime() {

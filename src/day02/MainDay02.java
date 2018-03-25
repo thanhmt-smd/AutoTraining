@@ -13,10 +13,10 @@ public class MainDay02 {
 	private static String _beachHouse = "Beach House";
 
 	public static void main(String[] args) {
-		RunTask01Day01();
+		RunTaskDay02();
 	}
 
-	private static void RunTask01Day01() {
+	private static void RunTaskDay02() {
 		enterNumber(_villa);
 		enterNameVillaAndShow();
 		enterNumber(_beachHouse);
